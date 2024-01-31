@@ -1,0 +1,25 @@
+.maindiv{
+    background-color: rgb(225, 223, 221);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 10rem;
+    width: 20rem;
+transition: all ease-in-out;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid rgba(78, 77, 77, 0.664);
+}
+
+.info{
+     padding: 0.5rem;
+     
+    display: flex;
+    flex-direction: column;
+     justify-content: space-between;
+}
+.name{
+  
+  font-size: 1rem;
+  font-weight: 700;
+}

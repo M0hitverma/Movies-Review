@@ -1,0 +1,108 @@
+.sumdiv{
+   height: 100vh;
+    width: 100vw;
+   display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: black;
+    color: white;
+ 
+  padding:1rem;
+}
+.maincontainer{
+    position: relative;
+    height: 95%;
+    width: 50%;
+    background-color: black;
+    display: flex;
+
+    
+}
+.movieinfo{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+   top:30%;
+   padding:2rem;
+   overflow: hidden;
+}
+.image{
+    transition: all ease-in-out 0.5s;
+opacity: 0.8;
+}
+#heading{
+    font-size:4rem;
+    font-weight: bolder;
+}
+#language{
+    font-size: 2rem;
+}
+#rating{
+    font-weight:bolder;
+    color: red;
+    font-size: 2rem;
+}
+#summary{
+    transform: translateY(200%);
+    transition: all ease-in-out 0.5s;
+    font-size: 1rem;
+    font-weight: 700;
+    word-spacing: 3px;
+}
+.icon{
+scale: 0;
+    font-size: 7rem;
+     transform: translateX(300%);
+     transition: all ease-in-out 0.5s;
+}
+.maincontainer:hover #summary{
+    transform: translateY(0);
+  
+}
+.maincontainer:hover .image{
+    opacity: 0.4;
+}
+.maincontainer:hover .icon{
+    scale: 1;
+    transform: translateX(100%);
+}
+.headings{
+
+    overflow: hidden;
+    
+}
+.booking{
+     position: absolute;
+     right:0%;
+     top:10%;
+     color: black;
+     overflow: hidden;
+      
+}
+.booking-btn{
+     background-color: wheat;
+   padding:4px 10px;
+   font-size: 1rem;
+   margin-bottom: 2rem;
+   border-radius: 5px;
+}
+
+.booking-form{
+   padding: 2rem;
+    background-color: white;
+    border-radius: 5px;
+  display: flex;
+   flex-direction: column;
+   gap:2rem;  
+
+}
+
+label>input{
+   font-size: 1rem;
+   border:1px solid black;
+   padding: 5px 10px;
+   font-weight: 600;
+}
